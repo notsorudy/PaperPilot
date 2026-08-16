@@ -1,0 +1,189 @@
+{
+  "total_eval_cases": 6,
+  "mean_concept_recall_percent": 66.7,
+  "mean_faithfulness_percent": 92.7,
+  "mean_runtime_seconds": 131.42,
+  "records": [
+    {
+      "id": "eval-1",
+      "query": "Can you find the official Self-RAG paper and explain its architecture, how the critique tokens work, and compare its performance to standard RAG models?",
+      "intent": "paper_comparison",
+      "expected_mentions": [
+        "reflection",
+        "critique",
+        "retrieve",
+        "Akari Asai",
+        "adaptive"
+      ],
+      "found_mentions": [
+        "reflection",
+        "critique",
+        "retrieve"
+      ],
+      "missing_mentions": [
+        "Akari Asai",
+        "adaptive"
+      ],
+      "concept_recall_percent": 60.0,
+      "faithfulness_score_percent": 100.0,
+      "runtime_seconds": 138.97,
+      "papers_retrieved": 10,
+      "unanswered_aspects": [
+        "Exact numerical performance comparison (accuracy, F1, etc.) between Self\u2011RAG and vanilla RAG on identical test sets",
+        "Retrieval system specifics (type of retriever, index size, latency)",
+        "Computational cost or inference speed overhead introduced by the critique token generation",
+        "Effect of model scale on Self\u2011RAG performance"
+      ]
+    },
+    {
+      "id": "eval-2",
+      "query": "Explain Low-Rank Adaptation (LoRA) and QLoRA for parameter-efficient fine-tuning of large language models.",
+      "intent": "paper_comparison",
+      "expected_mentions": [
+        "low-rank",
+        "quantization",
+        "4-bit",
+        "Hu",
+        "Dettmers"
+      ],
+      "found_mentions": [
+        "quantization",
+        "Hu",
+        "Dettmers"
+      ],
+      "missing_mentions": [
+        "low-rank",
+        "4-bit"
+      ],
+      "concept_recall_percent": 60.0,
+      "faithfulness_score_percent": 89.0,
+      "runtime_seconds": 133.47,
+      "papers_retrieved": 10,
+      "unanswered_aspects": [
+        "Specific quantitative benchmarks (exact memory savings, accuracy gaps, latency numbers) for QLoRA",
+        "Detailed algorithmic steps of the quantization process used in QLoRA",
+        "Comparative empirical studies between LoRA, QLoRA, and other PEFT methods"
+      ]
+    },
+    {
+      "id": "eval-3",
+      "query": "What is Corrective Retrieval Augmented Generation (CRAG) and how does its retrieval evaluator improve accuracy?",
+      "intent": "concept_explanation",
+      "expected_mentions": [
+        "corrective",
+        "evaluator",
+        "retrieval",
+        "confidence",
+        "web search"
+      ],
+      "found_mentions": [
+        "corrective",
+        "evaluator",
+        "retrieval",
+        "confidence"
+      ],
+      "missing_mentions": [
+        "web search"
+      ],
+      "concept_recall_percent": 80.0,
+      "faithfulness_score_percent": 89.0,
+      "runtime_seconds": 16.38,
+      "papers_retrieved": 5,
+      "unanswered_aspects": []
+    },
+    {
+      "id": "eval-4",
+      "query": "Explain Chain-of-Thought prompting, self-consistency, and their impact on reasoning benchmarks.",
+      "intent": "concept_explanation",
+      "expected_mentions": [
+        "chain-of-thought",
+        "reasoning",
+        "step-by-step",
+        "self-consistency",
+        "Wei"
+      ],
+      "found_mentions": [
+        "reasoning",
+        "Wei"
+      ],
+      "missing_mentions": [
+        "chain-of-thought",
+        "step-by-step",
+        "self-consistency"
+      ],
+      "concept_recall_percent": 40.0,
+      "faithfulness_score_percent": 100.0,
+      "runtime_seconds": 170.12,
+      "papers_retrieved": 10,
+      "unanswered_aspects": [
+        "Detailed algorithmic pseudocode for the sample\u2011and\u2011marginalize procedure beyond the high\u2011level description",
+        "Exact computational overhead (runtime, memory) of generating 40 sampled paths per query",
+        "Ablation results comparing self\u2011consistency with other decoding techniques such as beam search or nucleus sampling without marginalization",
+        "Statistical significance testing of the reported gains (e.g., confidence intervals)",
+        "Long\u2011term effects of self\u2011consistency on downstream tasks beyond the listed benchmarks"
+      ]
+    },
+    {
+      "id": "eval-5",
+      "query": "Compare Direct Preference Optimization (DPO) and RLHF with PPO for aligning large language models.",
+      "intent": "paper_comparison",
+      "expected_mentions": [
+        "preference",
+        "policy",
+        "reward",
+        "Rafailov",
+        "PPO"
+      ],
+      "found_mentions": [
+        "preference",
+        "policy",
+        "reward",
+        "PPO"
+      ],
+      "missing_mentions": [
+        "Rafailov"
+      ],
+      "concept_recall_percent": 80.0,
+      "faithfulness_score_percent": 90.0,
+      "runtime_seconds": 130.82,
+      "papers_retrieved": 10,
+      "unanswered_aspects": [
+        "Exact training wall\u2011clock time and GPU memory usage for PPO vs. DPO on the same model and hardware",
+        "Effect of noisy vs. curated preference datasets on each method\u2019s robustness",
+        "Generalization performance on out\u2011of\u2011distribution prompts not covered in the excerpts",
+        "Precise hyper\u2011parameter values (learning rates, KL\u2011coefficients, \u03b2) employed in the cited experiments"
+      ]
+    },
+    {
+      "id": "eval-6",
+      "query": "Explain FlashAttention mechanism, tiled matrix computation, and memory complexity reductions in transformer attention.",
+      "intent": "implementation_guide",
+      "expected_mentions": [
+        "FlashAttention",
+        "SRAM",
+        "IO-aware",
+        "tiling",
+        "Dao"
+      ],
+      "found_mentions": [
+        "FlashAttention",
+        "SRAM",
+        "tiling",
+        "Dao"
+      ],
+      "missing_mentions": [
+        "IO-aware"
+      ],
+      "concept_recall_percent": 80.0,
+      "faithfulness_score_percent": 88.0,
+      "runtime_seconds": 198.79,
+      "papers_retrieved": 10,
+      "unanswered_aspects": [
+        "Precise mathematical derivation of the online\u2011softmax recurrence and tile size selection heuristics",
+        "Quantitative latency benchmarks for specific sequence lengths",
+        "Detailed algorithmic differences between FlashAttention\u20112/3 and the original version",
+        "Implementation details for handling relative\u2011position bias within the tiled framework"
+      ]
+    }
+  ]
+}

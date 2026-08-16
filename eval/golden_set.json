@@ -1,0 +1,146 @@
+[
+  {
+    "id": "eval-1",
+    "query": "Can you find the official Self-RAG paper and explain its architecture, how the critique tokens work, and compare its performance to standard RAG models?",
+    "intent": "paper_comparison",
+    "expected_mentions": [
+      "reflection",
+      "critique",
+      "retrieve",
+      "Akari Asai",
+      "adaptive"
+    ]
+  },
+  {
+    "id": "eval-2",
+    "query": "Explain Low-Rank Adaptation (LoRA) and QLoRA for parameter-efficient fine-tuning of large language models.",
+    "intent": "paper_comparison",
+    "expected_mentions": [
+      "low-rank",
+      "quantization",
+      "4-bit",
+      "Hu",
+      "Dettmers"
+    ]
+  },
+  {
+    "id": "eval-3",
+    "query": "What is Corrective Retrieval Augmented Generation (CRAG) and how does its retrieval evaluator improve accuracy?",
+    "intent": "concept_explanation",
+    "expected_mentions": [
+      "corrective",
+      "evaluator",
+      "retrieval",
+      "confidence",
+      "web search"
+    ]
+  },
+  {
+    "id": "eval-4",
+    "query": "Explain Chain-of-Thought prompting, self-consistency, and their impact on reasoning benchmarks.",
+    "intent": "concept_explanation",
+    "expected_mentions": [
+      "chain-of-thought",
+      "reasoning",
+      "step-by-step",
+      "self-consistency",
+      "Wei"
+    ]
+  },
+  {
+    "id": "eval-5",
+    "query": "Compare Direct Preference Optimization (DPO) and RLHF with PPO for aligning large language models.",
+    "intent": "paper_comparison",
+    "expected_mentions": [
+      "preference",
+      "policy",
+      "reward",
+      "Rafailov",
+      "PPO"
+    ]
+  },
+  {
+    "id": "eval-6",
+    "query": "Explain FlashAttention mechanism, tiled matrix computation, and memory complexity reductions in transformer attention.",
+    "intent": "implementation_guide",
+    "expected_mentions": [
+      "FlashAttention",
+      "SRAM",
+      "IO-aware",
+      "tiling",
+      "Dao"
+    ]
+  },
+  {
+    "id": "eval-7",
+    "query": "What is Mixture of Experts (MoE) routing in modern LLMs like Mixtral 8x7B?",
+    "intent": "concept_explanation",
+    "expected_mentions": [
+      "mixture of experts",
+      "routing",
+      "router",
+      "gating",
+      "sparsity"
+    ]
+  },
+  {
+    "id": "eval-8",
+    "query": "Explain speculative decoding techniques and draft models for accelerating LLM inference latency.",
+    "intent": "concept_explanation",
+    "expected_mentions": [
+      "speculative",
+      "draft",
+      "verification",
+      "latency",
+      "Leviathan"
+    ]
+  },
+  {
+    "id": "eval-9",
+    "query": "Survey of Graph Retrieval-Augmented Generation (Graph RAG) versus standard vector-based RAG.",
+    "intent": "literature_review",
+    "expected_mentions": [
+      "graph",
+      "knowledge graph",
+      "entity",
+      "retrieval",
+      "relationship"
+    ]
+  },
+  {
+    "id": "eval-10",
+    "query": "Explain the architecture and training objective of Dense Passage Retrieval (DPR) for open-domain question answering.",
+    "intent": "concept_explanation",
+    "expected_mentions": [
+      "dense passage retrieval",
+      "bi-encoder",
+      "Karpukhin",
+      "BM25",
+      "embeddings"
+    ]
+  },
+  {
+    "id": "eval-11",
+    "query": "What is Constitutional AI and RL from AI Feedback (RLAIF) for model harmlessness and helpfulness?",
+    "intent": "concept_explanation",
+    "expected_mentions": [
+      "constitutional",
+      "harmlessness",
+      "critique",
+      "Anthropic",
+      "Bai"
+    ]
+  },
+  {
+    "id": "eval-12",
+    "query": "Explain Contrastive Language-Image Pretraining (CLIP) and its multimodal zero-shot transfer capabilities.",
+    "intent": "concept_explanation",
+    "expected_mentions": [
+      "contrastive",
+      "zero-shot",
+      "multimodal",
+      "Radford",
+      "vision"
+    ]
+  }
+]

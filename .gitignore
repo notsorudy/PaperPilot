@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments & local files
+.venv
+.env
+resume.pdf
+.qdrant_data/
+.cache/
+data/
+*.json.bak

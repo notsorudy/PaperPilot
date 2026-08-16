@@ -1,0 +1,17 @@
+langchain
+langchain-cerebras
+langchain-groq
+langchain-google-genai
+langgraph
+python-dotenv
+langchain-mcp-adapters
+langchain-tavily
+feedparser
+arxiv
+requests
+sentence-transformers
+pypdf
+qdrant-client
+langchain-qdrant
+langchain-huggingface
+langchain-community

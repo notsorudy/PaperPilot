@@ -1,0 +1,110 @@
+{
+  "total_queries_tested": 9,
+  "avg_runtime_seconds": 146.35,
+  "min_runtime_seconds": 89.46,
+  "max_runtime_seconds": 244.22,
+  "avg_papers_retrieved": 9.0,
+  "avg_chunks_created": 744.6,
+  "avg_faithfulness_percent": 98.9,
+  "all_runs": [
+    {
+      "query_index": 1,
+      "query": "Explain Self-RAG architecture, reflection tokens, and benchmark performance on PopQA.",
+      "runtime_seconds": 135.12,
+      "papers_retrieved": 10,
+      "chunks_created": 919,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 3,
+      "success": true
+    },
+    {
+      "query_index": 2,
+      "query": "Compare LoRA and QLoRA for parameter-efficient fine-tuning of large language models.",
+      "runtime_seconds": 244.22,
+      "papers_retrieved": 10,
+      "chunks_created": 940,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 5,
+      "success": true
+    },
+    {
+      "query_index": 4,
+      "query": "Explain Chain-of-Thought prompting, self-consistency, and their impact on multi-step reasoning.",
+      "runtime_seconds": 107.55,
+      "papers_retrieved": 5,
+      "chunks_created": 477,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 2,
+      "success": true
+    },
+    {
+      "query_index": 5,
+      "query": "Survey of Graph Retrieval-Augmented Generation (Graph RAG) versus vector-based RAG.",
+      "runtime_seconds": 228.81,
+      "papers_retrieved": 10,
+      "chunks_created": 886,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 4,
+      "success": true
+    },
+    {
+      "query_index": 6,
+      "query": "How does Direct Preference Optimization (DPO) compare to RLHF with PPO?",
+      "runtime_seconds": 113.18,
+      "papers_retrieved": 10,
+      "chunks_created": 951,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 4,
+      "success": true
+    },
+    {
+      "query_index": 7,
+      "query": "Explain FlashAttention mechanism and memory complexity reductions in transformer attention.",
+      "runtime_seconds": 106.57,
+      "papers_retrieved": 10,
+      "chunks_created": 663,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 3,
+      "success": true
+    },
+    {
+      "query_index": 8,
+      "query": "What is Mixture of Experts (MoE) routing in modern LLMs like Mixtral 8x7B?",
+      "runtime_seconds": 186.67,
+      "papers_retrieved": 10,
+      "chunks_created": 785,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 3,
+      "success": true
+    },
+    {
+      "query_index": 9,
+      "query": "Explain speculative decoding techniques for accelerating LLM inference latency.",
+      "runtime_seconds": 89.46,
+      "papers_retrieved": 6,
+      "chunks_created": 356,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 1.0,
+      "unanswered_aspects_count": 5,
+      "success": true
+    },
+    {
+      "query_index": 10,
+      "query": "Survey of agentic workflows: ReAct, Reflexion, and LangGraph architectures.",
+      "runtime_seconds": 105.61,
+      "papers_retrieved": 10,
+      "chunks_created": 724,
+      "relevant_chunks_used": 15,
+      "faithfulness_score": 0.9,
+      "unanswered_aspects_count": 3,
+      "success": true
+    }
+  ]
+}
